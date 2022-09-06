@@ -1,0 +1,17 @@
+.outlet{
+    background: #1B495C;
+    color: #DAE6E3;
+    /* width: 100vw; */
+    width: 100%;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.shared-layout-content{
+    display: flex;
+    direction: rows;
+    width: 100%;
+
+}

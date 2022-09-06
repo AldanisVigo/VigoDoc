@@ -1,0 +1,66 @@
+.field-palette{
+    display: block;
+    position: fixed;
+    right: 0px;
+    top : calc(100vh / 2 - 100px);
+    height: 200px;
+    background: #207C9C;
+    /* background: rgba(0,0,255,0.5); */
+    /* overflow-x: scroll; */
+    /* overflow-y : scroll; */
+    transition: all 1s;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 100;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.field-palette::-webkit-scrollbar {
+  display: none;
+}
+
+
+.field-palette-hidden{
+    /* left: 400px; */
+    width: 20px;
+    height: 20px;
+}   
+
+.field-palette-tab{
+    position: relative;
+    top: 0;
+    left: 10;
+}
+
+.field-palette-tab:hover{
+    cursor: pointer;
+}
+
+.field-palette-tab-outside{
+    position: relative;
+    /* left: -30px; */
+}
+
+.field-palette-item{
+    text-align: left;
+}
+
+.field-palette-item:hover{
+    color: white;
+    cursor: pointer;
+    background: #207C9C;
+}
+
+.field-palette-list{
+    max-height: 80%;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.field-palette-list::-webkit-scrollbar {
+  display: none;
+}

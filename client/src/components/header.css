@@ -1,0 +1,23 @@
+.header{
+    background: #207C9C;
+    padding: 8px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 100000;
+}
+
+.sidebar-toggle-icon{
+    font-size: xx-large;
+    color: white; 
+    float: right;
+    position: relative;
+    right: 20px;   
+}
+
+.sidebar-toggle-icon:hover{
+    cursor: pointer;
+    color: black;
+}
