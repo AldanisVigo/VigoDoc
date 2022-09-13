@@ -59,11 +59,11 @@ const ImageField = ({ mode, field,fieldIndex, deleteField, documentFields,setDoc
             {mode !== 'preview' && <FaTrash className="document-delete-btn" onClick={e=>deleteField(field)}/>}
             <div style={{textAlign : field.alignment, width : '100%', background: 'lightgray'}}><img alt={field} src={field.src} width={field.width} height={field.height} readOnly></img></div><br/>
             Image URL: <input type="text" value={field.src} placeholder="Image URL" onChange={e=>updateImageUrl(e)}/><br/>
-            Width: <input type="range" min="20" max="330" value={field.width} class="slider" id="myRange" ref={widthSliderRef} onChange={updateImageWidth}/><br/>
-            Height: <input type="range" min="20" max="330" value={field.height} class="slider" placeholder="Image Height" onChange={e=>updateImageHeight(e)}/><br/>
+            Width: <input type="range" min="20" max="330" value={field.width} className="slider" id="myRange" ref={widthSliderRef} onChange={updateImageWidth}/><br/>
+            Height: <input type="range" min="20" max="330" value={field.height} className="slider" placeholder="Image Height" onChange={e=>updateImageHeight(e)}/><br/>
             <div style={{position:'relative'}}>
                 Align : <select value={field.alignment} onChange={e=>updateImageAlignment(e)}>
-                    <option selected>center</option>
+                    <option>center</option>
                     <option>left</option>
                     <option>right</option>
                 </select>

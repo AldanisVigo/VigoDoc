@@ -1,8 +1,8 @@
 import { FaTrash } from 'react-icons/fa'
 import './fieldtypes.css'
-
 const TextField = ({ mode,field,fieldIndex,deleteField,documentFields,setDocumentFields }) => {
     
+
     const updateField = (e) => {
         const index = documentFields.indexOf(field)
 
@@ -22,7 +22,7 @@ const TextField = ({ mode,field,fieldIndex,deleteField,documentFields,setDocumen
 
     return <div className={mode !== 'preview' ? 'document-field-wrapper' : ''}>
         {mode === 'preview' && documentFields[fieldIndex].value}
-        {mode !== 'preview' && <textarea className="document-text-input" rows="4" placeholder="Text Label" value={field.value} onChange={updateField}/>}
+        {mode !== 'preview' && <textarea className="document-text-input" rows="4" placeholder="Text Label" value={field?.value} onChange={updateField}/>}
         {mode !== 'preview' && <FaTrash className="document-delete-btn" onClick={e=>deleteField(field)}/>}
     </div>
 }

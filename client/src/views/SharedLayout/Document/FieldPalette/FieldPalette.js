@@ -60,12 +60,16 @@ const fieldTypes = [
     {
         type : 'date-input',
         icon : <FaCalendar/>,
-        name : 'Date Input Field'
+        name : 'Date Input Field',
+        value : '',
+        label : ''
     },
     {
         type : 'time-input',
         icon : <FaClock/>,
-        name : 'Time Input Field'
+        name : 'Time Input Field',
+        value : '',
+        label : ''
     },
     {
         type : 'video',
